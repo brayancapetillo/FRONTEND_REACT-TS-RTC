@@ -1,0 +1,58 @@
+/*-===================== INPUT =====================-*/
+
+/*&======== INPUT TEXT ========&*/
+.p-inputtext {
+  @apply appearance-none rounded-md border border-gray-300 bg-primary_ p-2 text-gray transition duration-300 hover:border-primary-500 focus:border-primary-500 focus:shadow-focus focus:shadow-primary-100 dark:border-gray-600  dark:bg-main_dark dark:text-white/80 dark:hover:border-primary-500 dark:focus:border-primary-500 dark:focus:shadow-primary-800;
+}
+
+/*&======== CHECKBOX ========&*/
+.p-checkbox {
+  @apply relative mr-2 inline-flex h-5 min-h-5 w-5 min-w-5 select-none align-bottom;
+}
+
+input.p-checkbox-input {
+  @apply absolute left-0 top-0 z-[1] m-0 h-full w-full cursor-pointer appearance-none p-0 opacity-0 outline-none;
+}
+
+.p-checkbox .p-checkbox-box {
+  @apply h-5 w-5 rounded border-2 border-solid border-gray-300 text-gray outline-transparent transition-all duration-300 dark:border-gray-600 dark:bg-main_dark;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+  @apply text-sm text-white transition duration-300;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon.p-icon {
+  @apply h-4 w-4  text-sm;
+}
+
+.p-highlight .p-checkbox-box {
+  @apply border-primary-500 bg-primary-500 dark:border-primary-500 dark:bg-primary-500;
+}
+
+.p-checkbox:hover .p-checkbox-box {
+  @apply border-primary-500;
+}
+
+.p-highlight .p-checkbox:hover .p-checkbox-box {
+  @apply border-primary-700 bg-primary-700 dark:border-primary-300 dark:bg-primary-300;
+}
+
+
+/*&======== PROGRESSBAR ========&*/
+
+.p-progressbar {
+  @apply relative h-5 overflow-hidden rounded-md border-none bg-gray-100 dark:bg-main_dark;
+}
+
+.p-progressbar .p-progressbar-value {
+  @apply bg-gradient-to-l from-primary-300 to-primary-500;
+}
+
+.p-progressbar-determinate .p-progressbar-value {
+  @apply absolute h-full items-center justify-center overflow-hidden;
+}
+
+.p-progressbar-determinate .p-progressbar-value-animate {
+  @apply transition duration-300 ease-in-out;
+}

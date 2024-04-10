@@ -1,0 +1,85 @@
+/*-===================== BUTTON =====================-*/
+button.p-button {
+  @apply relative inline-flex cursor-pointer select-none items-center overflow-hidden rounded-md border border-solid border-primary-500 bg-primary-500 text-center align-bottom font-normal text-white transition duration-300 hover:border-primary-700 hover:bg-primary-700 focus:shadow-focus_offset dark:focus:shadow-focus_offset_dark dark:text-secundary dark:font-semibold;
+}
+
+button.p-button:not(:disabled):active {
+  @apply bg-primary-700 dark:bg-primary-300;
+}
+
+button.p-column-filter-add-button,
+.p-column-filter-remove-button {
+  @apply w-full justify-center;
+}
+
+button.p-fluid .p-button {
+  @apply w-full;
+}
+
+/*&======== SIZE BUTTON ========&*/
+
+/*=== SIZE BUTTON SM ===*/
+button.p-button.p-button-sm {
+  @apply px-3 py-1.5 text-sm; 
+}
+
+/*&======== BUTTON STYLES ========&*/
+
+/*?=== BUTTON TEXT ===?*/
+
+button.p-button.p-button-text {
+  @apply flex gap-1 border-transparent bg-transparent text-primary;
+}
+
+button.p-button.p-button-text:hover {
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 95%);
+}
+
+button.p-button.p-button-text:not(:disabled):active {
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+/*?=== BUTTON OUTLINED ===?*/
+
+button.p-button.p-button-outlined {
+  @apply border border-primary-500 bg-primary_ text-primary dark:bg-secondary_dark;
+}
+
+button.p-button.p-button-outlined:hover {
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 95%);
+}
+
+button.p-button.p-button-outlined:active {
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+button.p-button.p-button-outlined:not(:disabled):active {
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+/* === DANGER ===*/
+button.p-button.p-button-text.p-button-danger {
+  @apply text-danger;
+}
+
+button.p-button.p-button-text.p-button-danger:focus {
+  @apply shadow-focus_offset_danger dark:shadow-focus_offset_dark_danger;
+}
+
+button.p-button.p-button-text.p-button-danger:hover {
+  background: color-mix(in srgb, var(--Color-danger--1), transparent 95%);
+}
+
+button.p-button.p-button-text.p-button-danger:active {
+  background: color-mix(in srgb, var(--Color-danger--1), transparent 85%);
+}
+
+button.p-button.p-button-text.p-button-danger:not(:disabled):active {
+  background: color-mix(in srgb, var(--Color-danger--1), transparent 85%);
+}
+
+/*?=== BUTTON CLOSE ===?*/
+
+button.p-multiselect-close {
+  @apply relative flex items-center justify-center overflow-hidden;
+}

@@ -1,0 +1,64 @@
+@import "@fontsource/source-sans-pro";
+
+@layer base {
+  :root {
+    --Color-Primary-50: #ebfef4;
+    --Color-Primary-100: #d0fbe4;
+    --Color-Primary-200: #a4f6ce;
+    --Color-Primary-300: #6aebb4;
+    --Color-Primary-400: #2ed996;
+    --Color-Primary-500: #0bd18a;
+    --Color-Primary-600: #009b67;
+    --Color-Primary-700: #007c56;
+    --Color-Primary-800: #036244;
+    --Color-Primary-900: #03513a;
+    --Color-Primary-950: #012d22;
+
+    --Color-success-1: #0bd18a;
+    --Color-warning-1: #eee500;
+    --Color-danger--1: #fc6161;
+
+    --Text--base: #ffffff;
+    --Text--gray: #5d657b;
+    --Text--primary: var(--Color-Primary-500);
+    --Text--secundary: var(--Color-Primary-950);
+
+    --Background--base: #ffffff;
+    --Background--main: #f1f5f9;
+    --Background--main_dark: #20232a;
+    --Background--secondary_dark: #33373e;
+    --Background--half_transparent: color-mix(
+      in srgb,
+      var(--Background--main_dark),
+      transparent 85%
+    );
+
+    --Shadow-Color: #84a9c82e;
+    --Shadow-dark-Color: #0606063f;
+  }
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+  background: var(--Background--main);
+  user-select: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

@@ -1,0 +1,338 @@
+/*-===================== FILTER =====================-*/
+
+/*&=== FILTER GLOBAL ===&*/
+.p-column-filter-overlay {
+  @apply min-w-64 rounded-lg bg-primary_ text-gray shadow-lg shadow-shadow_color dark:bg-secondary_dark dark:shadow-sha_dark;
+}
+
+/*&====== FILTER SECTIONS ======&*/
+
+/* SECTION HEADER */
+.p-column-filter-overlay-menu .p-column-filter-operator {
+  @apply rounded-tl-lg rounded-tr-lg border-b border-gray-100 bg-gray-50 px-4 py-3 dark:border-gray-600 dark:bg-secondary_dark;
+}
+
+/* SECTION MIDDLE */
+
+.p-column-filter-overlay-menu .p-column-filter-constraint {
+  @apply p-4;
+}
+
+.p-column-filter-overlay-menu
+  .p-column-filter-constraint
+  .p-column-filter-matchmode-dropdown {
+  @apply mb-2;
+}
+
+/* SECTION ADD RULE */
+
+.p-column-filter-overlay-menu .p-column-filter-add-rule {
+  @apply px-4 py-2;
+}
+
+/* SECTION FOTTER END */
+
+.p-column-filter-overlay-menu .p-column-filter-buttonbar {
+  @apply p-4;
+}
+
+.p-column-filter-overlay-menu
+  .p-column-filter-constraint
+  .p-column-filter-remove-button {
+  @apply mt-2;
+}
+
+/*&=== DROPDOWN FILTER SELECT ===&*/
+
+.p-dropdown {
+  @apply rounded-md border border-solid border-gray-300 bg-primary_ outline-transparent transition duration-300 hover:border-primary-500 dark:border-gray-600 dark:bg-main_dark dark:hover:border-primary-500;
+}
+
+.p-dropdown:is(.p-inputwrapper-focus, .p-focus) {
+  @apply border border-primary-500 shadow-focus shadow-primary-100 dark:shadow-primary-800;
+}
+
+.p-dropdown .p-dropdown-label {
+  @apply border-none bg-transparent;
+}
+
+.p-dropdown .p-dropdown-label.p-inputtext:focus {
+  @apply shadow-none;
+}
+
+.p-dropdown .p-dropdown-trigger {
+  @apply w-10 rounded-tl-md rounded-tr-md bg-transparent text-gray dark:text-white/80;
+}
+
+.p-dropdown-clear-icon {
+  @apply absolute top-1/2 -mt-2;
+}
+
+.p-dropdown .p-dropdown-clear-icon {
+  @apply right-12 text-gray dark:text-white/80;
+}
+
+/*-=== DROPDOWN FILTER SELECT LIST ===-*/
+.p-dropdown-panel {
+  @apply rounded-md border-none bg-primary_ text-gray shadow-lg shadow-shadow_color dark:bg-secondary_dark dark:text-white/80 dark:shadow-sha_dark;
+}
+
+.p-dropdown-panel .p-dropdown-items {
+  @apply py-2;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  @apply border-none px-4 py-2;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  @apply text-secundary dark:text-white/80;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 70%);
+}
+
+.p-dropdown-items-wrapper::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+.p-dropdown-items-wrapper::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-primary-500;
+}
+
+/*&=== MULTISELECT ===&*/
+
+.p-multiselect-items-wrapper::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+.p-multiselect-items-wrapper::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-primary-500;
+}
+
+.p-multiselect {
+  @apply rounded-md border border-solid bg-primary_ outline-transparent transition duration-300 hover:border-primary-500 dark:border-gray-600 dark:bg-main_dark dark:text-white/80 dark:hover:border-primary-500;
+}
+
+.p-multiselect:not(.p-disabled).p-focus {
+  @apply border border-primary-500 shadow-focus shadow-primary-100 dark:shadow-primary-800;
+}
+
+.p-multiselect.active {
+  @apply border border-primary-500 shadow-focus shadow-primary-100 dark:shadow-primary-800;
+}
+
+.p-multiselect-label {
+  @apply block cursor-pointer overflow-hidden text-ellipsis whitespace-nowrap;
+}
+
+.p-multiselect .p-multiselect-label {
+  @apply px-4 py-2 transition duration-300;
+}
+
+.p-multiselect-trigger {
+  @apply flex cursor-pointer items-center justify-center;
+}
+
+.p-multiselect .p-multiselect-trigger {
+  @apply w-7 rounded-tl-md rounded-tr-md bg-transparent text-gray dark:text-white/80;
+}
+
+.p-multiselect-panel {
+  @apply min-w-64 rounded-md bg-primary_ text-gray shadow-lg shadow-shadow_color dark:bg-secondary_dark dark:shadow-sha_dark;
+}
+
+/*-=== MULTISELECT HEADER ===-*/
+
+/* SECTION HEADER */
+.p-multiselect-panel .p-multiselect-header {
+  @apply rounded-tl-lg rounded-tr-lg border-b border-gray-100 bg-gray-50 px-4 py-2 dark:border-gray-600 dark:bg-secondary_dark;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container {
+  @apply relative;
+}
+
+.p-multiselect-filter-icon {
+  @apply absolute top-1/2 -mt-2;
+}
+.p-multiselect-panel
+  .p-multiselect-header
+  .p-multiselect-filter-container
+  .p-multiselect-filter-icon {
+  @apply right-3 dark:text-white/80;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-multiselect-close {
+  @apply ml-2 h-7 w-7 rounded-full border-none bg-transparent text-gray transition duration-300 hover:bg-gray-100 dark:text-white/80 dark:hover:bg-gray-800/20;
+}
+
+/* SECTION BODY */
+
+.p-multiselect-panel .p-multiselect-items {
+  @apply py-3;
+}
+
+.p-multiselect-item {
+  @apply relative flex cursor-pointer items-center overflow-hidden outline-none;
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item {
+  @apply m-0 rounded-none border-none bg-transparent px-4 py-2 text-gray dark:text-white/80;
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+  @apply text-secundary dark:text-white/80;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-empty-message {
+  @apply bg-transparent px-4 py-2 text-gray;
+}
+
+/*&=== DATE PICKER ===&*/
+
+.p-datepicker {
+  @apply w-auto rounded-md border-gray-100 bg-primary_ p-2 text-gray dark:bg-secondary_dark dark:text-white/80;
+}
+
+.p-datepicker:not(.p-datepicker-inline) {
+  @apply border-none bg-primary_ shadow-lg shadow-shadow_color dark:bg-secondary_dark dark:shadow-sha_dark;
+}
+
+/*=== HEADER ===*/
+
+.p-datepicker-header {
+  @apply flex items-center justify-between;
+}
+
+.p-datepicker .p-datepicker-header {
+  @apply m-0 border-b border-solid border-gray-100 p-2 text-gray dark:border-gray-600;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-prev,
+.p-datepicker .p-datepicker-header .p-datepicker-next {
+  @apply h-8 w-8 rounded-full bg-transparent text-gray transition duration-300 hover:bg-gray-100 dark:text-white/80 dark:hover:bg-gray-800/20;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year,
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month {
+  @apply p-2 font-semibold text-gray transition duration-300 hover:text-primary dark:text-white/80 dark:hover:text-primary;
+}
+
+/*=== TABLE ===*/
+
+.p-datepicker table {
+  @apply mx-0 my-2;
+}
+
+.p-datepicker:not(.p-disabled)
+  table
+  td
+  span:not(.p-highlight):not(.p-disabled):hover {
+  @apply bg-gray-100 dark:hover:bg-gray-800/20 dark:hover:text-primary;
+}
+
+.p-datepicker td > span {
+  @apply relative mx-0 my-auto flex cursor-pointer items-center justify-center overflow-hidden;
+}
+
+.p-datepicker table td {
+  @apply p-1;
+}
+
+.p-datepicker table td > span {
+  @apply h-9 w-9 rounded-full border border-transparent transition duration-300;
+}
+
+.p-datepicker table td.p-datepicker-today > span {
+  @apply border-transparent bg-gray-100 text-gray dark:bg-gray-800/20 dark:text-primary;
+}
+.p-datepicker table td > span.p-highlight {
+  @apply text-primary;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+/*=== CALENDAR PICKER YEAR ===*/
+
+.p-yearpicker-year {
+  @apply relative inline-flex w-1/2 cursor-pointer items-center justify-center overflow-hidden;
+}
+
+.p-datepicker .p-yearpicker .p-yearpicker-year {
+  @apply rounded-md p-1 transition duration-300;
+}
+
+.p-datepicker .p-yearpicker .p-yearpicker-year.p-highlight {
+  @apply text-primary;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+/*=== CALENDAR PICKER MONTH ===*/
+
+.p-monthpicker-month {
+  @apply relative inline-flex w-1/3 cursor-pointer items-center justify-center overflow-hidden;
+}
+
+.p-datepicker .p-monthpicker .p-monthpicker-month {
+  @apply rounded-md p-1 transition duration-300;
+}
+
+.p-datepicker .p-monthpicker .p-monthpicker-month.p-highlight {
+  @apply text-primary;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month {
+  @apply mr-2;
+}
+
+.p-disabled,
+.p-component:disabled {
+  @apply opacity-60;
+}
+
+/*&=== SLIDER ===&*/
+
+.p-slider {
+  @apply relative rounded-md border-none bg-gray-300 dark:bg-gray-600;
+}
+
+.p-slider.p-slider-horizontal {
+  @apply h-1;
+}
+
+.p-slider-range {
+  @apply absolute block;
+}
+
+.p-slider .p-slider-range {
+  @apply bg-primary-500;
+}
+
+.p-slider-horizontal .p-slider-range {
+  @apply left-0 top-0 h-full;
+}
+
+.p-slider .p-slider-handle {
+  @apply h-4 w-4 rounded-full border-2 border-solid border-primary-500 bg-primary_ transition duration-300 dark:bg-secondary_dark;
+}
+
+.p-slider .p-slider-handle {
+  @apply absolute z-[1] block cursor-grab;
+}
+
+.p-slider-horizontal .p-slider-handle {
+  @apply top-1/2;
+}
+
+.p-slider.p-slider-horizontal .p-slider-handle {
+  @apply -ml-2 -mt-2;
+}
+
+.p-slider .p-slider-handle.p-slider-handle-active {
+  @apply z-[2];
+}
+
+.p-slider .p-slider-handle:focus {
+  @apply shadow-focus;
+}
+
