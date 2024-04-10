@@ -4,7 +4,7 @@
 }
 
 .p-datatable .p-datatable-header {
-  @apply p-3 text-gray;
+  @apply p-3 text-gray dark:text-white/80;
 }
 
 .p-datatable > .p-datatable-wrapper {
@@ -16,7 +16,7 @@
 }
 
 .p-datatable .p-datatable-thead > tr > th {
-  @apply p-3 text-left text-gray transition duration-300 hover:text-primary;
+  @apply p-3 text-left text-gray transition duration-300 hover:text-primary dark:text-white/80;
 }
 
 .p-datatable .p-column-header-content {
@@ -41,12 +41,12 @@
 }
 
 .p-column-filter-menu-button {
-  @apply h-8 w-8 rounded-md border-none bg-transparent text-gray transition duration-300;
+  @apply h-8 w-8 rounded-md border-none bg-transparent text-gray transition duration-300 dark:text-white/80;
 }
 
 .p-column-filter-menu-button,
 .p-column-filter-clear-button {
-  @apply relative inline-flex cursor-pointer items-center justify-center overflow-hidden hover:bg-gray-50 hover:text-secundary;
+  @apply relative inline-flex cursor-pointer items-center justify-center overflow-hidden hover:bg-gray-500/10 hover:text-secundary dark:hover:text-white;
 }
 
 .p-column-filter-menu-button.p-column-filter-menu-button-active,
@@ -55,18 +55,20 @@
   background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
 }
 
-
 .p-datatable .p-datatable-tbody > tr {
-  @apply text-gray transition duration-300 hover:scale-[1.005] hover:text-primary;
+  @apply text-gray transition duration-300 hover:scale-[1.005] hover:text-primary dark:text-white/80;
 }
 
 .p-datatable .p-datatable-tbody > tr.p-highlight {
+  @apply text-primary dark:text-white/80;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 90%);
+}
+:is(.dark .p-datatable .p-datatable-thead > tr > th.p-highlight) {
   @apply text-primary;
-  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
 }
 
 .p-datatable .p-datatable-tbody > tr > td {
-  @apply border border-b border-l-0 border-r-0 border-t border-gray-100 p-3 text-left;
+  @apply border border-b border-l-0 border-r-0 border-t border-gray-100 p-3 text-left dark:border-gray-600;
 }
 
 /* paginator */

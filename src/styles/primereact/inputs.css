@@ -42,7 +42,7 @@ input.p-checkbox-input {
 /*&======== PROGRESSBAR ========&*/
 
 .p-progressbar {
-  @apply relative h-5 overflow-hidden rounded-md border-none bg-gray-100 dark:bg-main_dark;
+  @apply relative h-5 overflow-hidden rounded-md border-none bg-gray-200 dark:bg-gray-600;
 }
 
 .p-progressbar .p-progressbar-value {

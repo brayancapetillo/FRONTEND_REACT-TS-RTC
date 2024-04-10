@@ -1,5 +1,5 @@
 .p-paginator {
-  @apply flex flex-wrap items-center justify-center rounded-xl border border-solid border-gray-100 px-2 py-4 text-gray;
+  @apply flex flex-wrap items-center justify-center rounded-xl border border-solid border-gray-100 px-2 py-4 text-gray dark:text-white/80;
 }
 
 .p-paginator-page,
@@ -15,19 +15,19 @@
 .p-paginator .p-paginator-prev,
 .p-paginator .p-paginator-next,
 .p-paginator .p-paginator-last {
-  @apply m-0.5 h-10 min-w-10 rounded-xl border-none bg-transparent text-gray transition duration-300 hover:bg-gray-100;
+  @apply m-0.5 h-10 min-w-10 rounded-xl border-none bg-transparent text-gray transition duration-300 hover:bg-gray-500/10 dark:text-white/80 dark:hover:text-white;
 }
 
 .p-paginator .p-paginator-pages .p-paginator-page {
-  @apply m-0.5 h-10 min-w-10 rounded-xl border-none bg-transparent text-gray transition duration-300 hover:bg-gray-100;
+  @apply m-0.5 h-10 min-w-10 rounded-xl border-none bg-transparent text-gray transition duration-300 hover:bg-gray-500/10 dark:text-white/80 dark:hover:text-white;
 }
 .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
-  @apply text-primary;
+  @apply text-primary dark:hover:text-primary;
   background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
 }
 
 .p-paginator .p-paginator-current {
-  @apply m-0.5 h-10 min-w-10 border-none bg-transparent px-2 py-0 text-gray;
+  @apply m-0.5 h-10 min-w-10 border-none bg-transparent px-2 py-0 text-gray dark:text-white/80;
 }
 
 .p-paginator .p-dropdown {
