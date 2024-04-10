@@ -12,7 +12,7 @@ function CardMenu(props: cardMenu) {
       </h3>
       <div className="flex items-center justify-between">
         <div className="mb-2 flex items-center gap-1">
-          <div className="text-2xl font-bold text-secundary transition duration-300 group-hover:text-primary dark:text-gray">
+          <div className="text-2xl font-bold text-secundary transition duration-300 group-hover:text-primary dark:text-white">
             {props.total}
           </div>
           <span
@@ -38,7 +38,7 @@ function CardMenu(props: cardMenu) {
           })}
         </div>
       </div>
-      <div className="text-gray-400 flex text-xs dark:text-white/50">
+      <div className="text-gray-400 flex text-xs dark:text-white/80">
         {props.sbtitle}
       </div>
     </div>
