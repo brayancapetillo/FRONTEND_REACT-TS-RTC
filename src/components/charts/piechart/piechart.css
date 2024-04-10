@@ -1,7 +1,17 @@
-.Scroll::-webkit-scrollbar {
-  width: 5px;
+/* .Scroll::-webkit-scrollbar {
+  width: 5px !important;
 }
+
 .Scroll::-webkit-scrollbar-thumb {
-  background: var(--Color-Primary-500);
-  border-radius: 100px;
+  @apply bg-gradient-to-b from-primary-300 to-primary-500;
+  border: none;
 }
+
+.dark .Scroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.dark .Scroll::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-primary-300 to-primary-500;
+  border: none;
+} */
