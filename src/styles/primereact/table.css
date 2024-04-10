@@ -2,3 +2,75 @@
 .p-datatable {
   @apply relative;
 }
+
+.p-datatable .p-datatable-header {
+  @apply p-3 text-gray;
+}
+
+.p-datatable > .p-datatable-wrapper {
+  @apply overflow-auto;
+}
+
+.p-datatable-table {
+  @apply w-full border-spacing-0;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  @apply p-3 text-left text-gray transition duration-300 hover:text-primary;
+}
+
+.p-datatable .p-column-header-content {
+  @apply flex items-center;
+}
+
+.p-datatable .p-sortable-column .p-column-title,
+.p-datatable .p-sortable-column .p-sortable-column-icon,
+.p-datatable .p-sortable-column .p-sortable-column-badge {
+  @apply align-middle;
+}
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+  @apply ml-2;
+}
+
+.p-column-filter-menu {
+  @apply ml-auto inline-flex;
+}
+
+.p-datatable .p-sortable-column.p-highlight {
+  @apply text-primary;
+}
+
+.p-column-filter-menu-button {
+  @apply h-8 w-8 rounded-md border-none bg-transparent text-gray transition duration-300;
+}
+
+.p-column-filter-menu-button,
+.p-column-filter-clear-button {
+  @apply relative inline-flex cursor-pointer items-center justify-center overflow-hidden hover:bg-gray-50 hover:text-secundary;
+}
+
+.p-column-filter-menu-button.p-column-filter-menu-button-active,
+.p-column-filter-menu-button.p-column-filter-menu-button-active:hover {
+  @apply text-primary;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+
+.p-datatable .p-datatable-tbody > tr {
+  @apply text-gray transition duration-300 hover:scale-[1.005] hover:text-primary;
+}
+
+.p-datatable .p-datatable-tbody > tr.p-highlight {
+  @apply text-primary;
+  background: color-mix(in srgb, var(--Color-Primary-500), transparent 85%);
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  @apply border border-b border-l-0 border-r-0 border-t border-gray-100 p-3 text-left;
+}
+
+/* paginator */
+
+.p-datatable .p-paginator-bottom {
+  @apply rounded-none border-0;
+}

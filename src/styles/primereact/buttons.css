@@ -1,6 +1,6 @@
 /*-===================== BUTTON =====================-*/
 button.p-button {
-  @apply relative inline-flex cursor-pointer select-none items-center overflow-hidden rounded-md border border-solid border-primary-500 bg-primary-500 text-center align-bottom font-normal text-white transition duration-300 hover:border-primary-700 hover:bg-primary-700 focus:shadow-focus_offset dark:focus:shadow-focus_offset_dark dark:text-secundary dark:font-semibold;
+  @apply relative inline-flex cursor-pointer select-none items-center overflow-hidden rounded-md border border-solid border-primary-500 bg-primary-500 text-center align-bottom font-normal text-white transition duration-300 hover:border-primary-700 hover:bg-primary-700 focus:shadow-focus_offset dark:font-semibold dark:text-secundary dark:focus:shadow-focus_offset_dark;
 }
 
 button.p-button:not(:disabled):active {
@@ -20,7 +20,7 @@ button.p-fluid .p-button {
 
 /*=== SIZE BUTTON SM ===*/
 button.p-button.p-button-sm {
-  @apply px-3 py-1.5 text-sm; 
+  @apply px-3 py-1.5 text-sm;
 }
 
 /*&======== BUTTON STYLES ========&*/
@@ -82,4 +82,13 @@ button.p-button.p-button-text.p-button-danger:not(:disabled):active {
 
 button.p-multiselect-close {
   @apply relative flex items-center justify-center overflow-hidden;
+}
+
+/*?=== BUTTON ONLY ICON ===?*/
+button.p-button.p-button-icon-only {
+  @apply w-8 px-0 py-3;
+}
+
+button.p-button.p-button-icon-only.p-button-rounded {
+  @apply h-8 rounded-lg;
 }

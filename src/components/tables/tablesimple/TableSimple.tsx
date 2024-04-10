@@ -132,7 +132,6 @@ export default function CustomersDemo() {
       <div className="justify-content-between align-items-center flex flex-wrap gap-2">
 
         <span className="p-input-icon-left">
-          <i className="pi pi-search" />
           <InputText
             value={globalFilterValue}
             onChange={onGlobalFilterChange}
@@ -292,7 +291,7 @@ export default function CustomersDemo() {
   const header = renderHeader();
 
   return (
-    <div className="card">
+    <div className="dark:shadow-sha_dark group flex min-h-32 w-full flex-col rounded-lg bg-primary_ p-4 shadow-xl3 transition-transform duration-300 dark:bg-secondary_dark">
       <DataTable
         value={customers as any}
         paginator

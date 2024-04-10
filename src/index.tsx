@@ -10,9 +10,13 @@ import { PrimeReactProvider } from "primereact/api";
 import "primeicons/primeicons.css";
 import "./index.css";
 
+import "../src/styles/primereact/generalprime.css"
+import "../src/styles/primereact/paginator.css"
 import "../src/styles/primereact/filters.css"
 import "../src/styles/primereact/buttons.css"
 import "../src/styles/primereact/inputs.css"
+import "../src/styles/primereact/table.css"
+import "../src/styles/primereact/tags.css"
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,

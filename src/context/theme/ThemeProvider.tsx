@@ -10,7 +10,7 @@ const themeColor: switchtheme[] = ThemeColor;
 const initial_State: ThemeState = {
   isSidebarOpen: true,
   isSettingsOpen: false,
-  isDarkTheme: true,
+  isDarkTheme: false,
   SelectedTheme: themeColor[0],
   paletteColors: themeColor[0].palette,
 };

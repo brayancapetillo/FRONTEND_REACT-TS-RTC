@@ -285,11 +285,6 @@
   @apply mr-2;
 }
 
-.p-disabled,
-.p-component:disabled {
-  @apply opacity-60;
-}
-
 /*&=== SLIDER ===&*/
 
 .p-slider {

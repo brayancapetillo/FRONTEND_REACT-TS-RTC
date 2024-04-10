@@ -1,0 +1,8 @@
+.p-disabled,
+.p-component:disabled {
+  @apply opacity-60;
+}
+
+.p-link {
+  @apply m-0 select-none border-none bg-transparent p-0 text-left;
+}
