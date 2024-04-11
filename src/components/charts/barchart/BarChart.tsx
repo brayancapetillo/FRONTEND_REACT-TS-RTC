@@ -22,10 +22,10 @@ function BarChart(databar: barDataChart) {
     color: paletteUse,
     tooltip: {
       trigger: "axis",
-      backgroundColor: `${isDarkTheme ? "#33373e" : "#ffffff"}`,
-      borderColor: `${isDarkTheme ? "#33373e" : "#ffffff"}`,
+      backgroundColor: `${isDarkTheme ? "#1f2937" : "#ffffff"}`,
+      borderColor: `${isDarkTheme ? "#1f2937" : "#ffffff"}`,
       textStyle: {
-        color: "#5d657b",
+        color: `${isDarkTheme ? 'white' : ''}`
       },
       axisPointer: {
         type: "cross",
@@ -44,15 +44,13 @@ function BarChart(databar: barDataChart) {
     xAxis: [
       {
         axisLabel: {
-          textStyle: {
-            color: "#5d657b",
-          },
+          color: `${isDarkTheme ? 'white' : ''}`
         },
 
         axisLine: {
           show: true,
           lineStyle: {
-            color: "#5d657b",
+            color: `${isDarkTheme ? 'white' : ''}`
           },
         },
 
@@ -63,9 +61,7 @@ function BarChart(databar: barDataChart) {
     yAxis: [
       {
         axisLabel: {
-          textStyle: {
-            color: "#5d657b",
-          },
+          color: `${isDarkTheme ? 'white' : ''}`
         },
 
         type: "value",

@@ -23,7 +23,10 @@ function PieChart(dataPie: PieDataChart) {
 
     tooltip: {
       trigger: "item",
-      backgroundColor: `${isDarkTheme ? "#33373e" : "#ffffff"}`,
+      backgroundColor: `${isDarkTheme ? "#1f2937" : "#ffffff"}`,
+      textStyle: {
+        color: `${isDarkTheme ? 'white' : ''}`
+      }
     },
 
     series: [
@@ -39,7 +42,7 @@ function PieChart(dataPie: PieDataChart) {
         avoidLabelOverlap: false,
         itemStyle: {
           borderRadius: 10,
-          borderColor: `${isDarkTheme ? "#33373e" : "#ffffff"}`,
+          borderColor: `${isDarkTheme ? "#1f2937" : "#ffffff"}`,
           borderWidth: 2,
         },
 
@@ -67,10 +70,10 @@ function PieChart(dataPie: PieDataChart) {
       <div className=" grid h-4/5 w-full grid-cols-5 items-center">
         <div className="relative col-span-3 aspect-square overflow-hidden">
           <div className="shadow-Circle_Shadow absolute left-1/2 top-1/2 flex aspect-square w-2/5 -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center rounded-full">
-            <h3 className="text-2xl font-semibold text-secundary transition duration-300 ease-in-out group-hover:text-primary dark:text-gray">
+            <h3 className="text-2xl font-semibold text-secundary transition duration-300 ease-in-out group-hover:text-primary dark:text-white">
               {totaldata}
             </h3>
-            <span className="text-gray-500 text-xs capitalize dark:text-white/50">
+            <span className="text-gray-500 text-xs capitalize dark:text-white/80">
               {dataPie.subtitle}
             </span>
           </div>
@@ -96,7 +99,7 @@ function PieChart(dataPie: PieDataChart) {
                     }}
                     className="h-3 w-3 rounded-full"
                   ></div>
-                  <div className="text-xl font-semibold text-secundary dark:text-gray">
+                  <div className="text-xl font-semibold text-secundary dark:text-white/80">
                     {item.value}
                   </div>
                 </div>
