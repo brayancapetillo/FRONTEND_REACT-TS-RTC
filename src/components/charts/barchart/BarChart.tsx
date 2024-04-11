@@ -44,9 +44,7 @@ function BarChart(databar: barDataChart) {
     xAxis: [
       {
         axisLabel: {
-          textStyle: {
-            color: `${isDarkTheme ? 'white' : ''}`
-          },
+          color: `${isDarkTheme ? 'white' : ''}`
         },
 
         axisLine: {
@@ -63,9 +61,7 @@ function BarChart(databar: barDataChart) {
     yAxis: [
       {
         axisLabel: {
-          textStyle: {
-            color: `${isDarkTheme ? 'white' : ''}`
-          },
+          color: `${isDarkTheme ? 'white' : ''}`
         },
 
         type: "value",
