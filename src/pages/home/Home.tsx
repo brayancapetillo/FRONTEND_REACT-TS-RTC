@@ -5,9 +5,22 @@ import { LuCalendarClock } from "react-icons/lu";
 import { LuBadgeCheck } from "react-icons/lu";
 import { LuLineChart } from "react-icons/lu";
 import { LuUsers2 } from "react-icons/lu";
-import BasicDemo from "../../components/tables/tablesimple/TableSimple";
+import TableSimple from "../../components/tables/tableSimple/tableSimple";
+import { useEffect, useState } from "react";
+import { Client } from "../../interfaces/global/clients/client.interface";
+import { ClientService } from "../../services/data/clients.example";
+
+
+
 
 function Home() {
+
+  const [clients, setclients] = useState<Client[]>([]);
+
+  useEffect(() => {
+    ClientService.getBestClients(10).then(response => setclients(response))
+  }, []);
+
   return (
     <div className="pb-10">
       <h1 className="text-2xl font-bold capitalize text-gray dark:text-white">
@@ -91,7 +104,7 @@ function Home() {
         Mejores clientes
       </h1>
       <div className="mt-4">
-      <BasicDemo/>
+        <TableSimple clients={clients} />
       </div>
     </div>
   );
