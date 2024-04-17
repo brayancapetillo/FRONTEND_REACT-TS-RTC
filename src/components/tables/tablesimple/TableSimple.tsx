@@ -5,19 +5,18 @@ import { Column } from 'primereact/column';
 import { Client } from '../../../interfaces/global/clients/client.interface';
 import TableEmpty from '../tableEmpty/tableEmpty';
 
-
+import InSyncSVG from '../../../assets/ilustrations/export/In_sync'
 
 export default function TableSimple({ clients }: { clients: Client[] }) {
 
     if (clients.length === 0)
-        return <TableEmpty componentSVG={''} title='Sin Clientes' subtitle='Aún no se han registrado clientes en el sistema. Actualmente, la base de datos no contiene información de clientes.' />;
+        return <TableEmpty componentSVG={InSyncSVG} title='Sin Clientes' subtitle='Aún no se han registrado clientes en el sistema. Actualmente, la base de datos no contiene información de clientes.' />;
 
 
     const columns = Object.keys(clients[0]);
 
     console.log(columns);
     
-
     return <div className="dark:shadow-sha_dark group flex min-h-32 w-full flex-col rounded-lg bg-primary_ p-4 shadow-xl3 transition-transform duration-300 dark:bg-secondary_dark">
         <DataTable value={clients} tableStyle={{ minWidth: '50rem' }}>
             <Column field="name" header="Name"></Column>
