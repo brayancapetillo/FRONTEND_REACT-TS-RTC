@@ -1,4 +1,7 @@
-export default function InSyncSVG() {
+import clsx from "clsx";
+import { SVGClass } from "../../../interfaces/global/svg/SvgClass.interface";
+
+export default function InSyncSVG({ className }: SVGClass) {
     return <svg xmlns="http://www.w3.org/2000/svg" data-="Layer 1"
         viewBox="0 0 962.67538 543.62114">
         <path
@@ -108,7 +111,7 @@ export default function InSyncSVG() {
             transform="translate(-118.66231 -178.18943)" fill="#3f3d56" />
         <path
             d="M462.64875,455.86222H351.26235a2.93113,2.93113,0,0,1-2.92773-2.92774V407.73871a2.93113,2.93113,0,0,1,2.92773-2.92774h111.3864a2.9311,2.9311,0,0,1,2.92774,2.92774v45.19577A2.9311,2.9311,0,0,1,462.64875,455.86222Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M452.04272,477.5429H361.86846a3.51328,3.51328,0,0,1,0-7.02656h90.17426C456.5735,470.45309,456.61882,477.60672,452.04272,477.5429Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
@@ -120,7 +123,7 @@ export default function InSyncSVG() {
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
         <path
             d="M604.75161,455.86222H493.36521a2.93114,2.93114,0,0,1-2.92774-2.92774V407.73871a2.93114,2.93114,0,0,1,2.92774-2.92774h111.3864a2.9311,2.9311,0,0,1,2.92774,2.92774v45.19577A2.9311,2.9311,0,0,1,604.75161,455.86222Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M594.14557,477.5429H503.97132a3.51328,3.51328,0,0,1,0-7.02656h90.17425C598.67636,470.45309,598.72168,477.60672,594.14557,477.5429Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
@@ -132,7 +135,7 @@ export default function InSyncSVG() {
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
         <path
             d="M746.85447,455.86222H635.46807a2.93114,2.93114,0,0,1-2.92774-2.92774V407.73871a2.93114,2.93114,0,0,1,2.92774-2.92774h111.3864a2.93109,2.93109,0,0,1,2.92773,2.92774v45.19577A2.93109,2.93109,0,0,1,746.85447,455.86222Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M736.24843,477.5429H646.07417a3.51328,3.51328,0,0,1,0-7.02656h90.17426C740.77922,470.45309,740.82453,477.60672,736.24843,477.5429Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
@@ -151,7 +154,7 @@ export default function InSyncSVG() {
         <circle cx="697.32397" cy="215.22126" r="1.55299" fill="#fff" />
         <path
             d="M876.93435,482.81148h-118.6a3.121,3.121,0,0,1-3.11734-3.11734V431.57142a3.121,3.121,0,0,1,3.11734-3.11735h118.6a3.12092,3.12092,0,0,1,3.11734,3.11735v48.12272A3.12091,3.12091,0,0,1,876.93435,482.81148Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M865.64145,505.89624H769.62736a3.74081,3.74081,0,0,1,0-7.48162h96.01409C870.46566,498.34729,870.51391,505.96419,865.64145,505.89624Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
@@ -163,7 +166,7 @@ export default function InSyncSVG() {
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
         <path
             d="M876.93435,622.44619h-118.6a3.121,3.121,0,0,1-3.11734-3.11734V571.20613a3.121,3.121,0,0,1,3.11734-3.11734h118.6a3.12091,3.12091,0,0,1,3.11734,3.11734v48.12272A3.12091,3.12091,0,0,1,876.93435,622.44619Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M865.64145,645.531H769.62736a3.74081,3.74081,0,0,1,0-7.48162h96.01409C870.46566,637.982,870.51391,645.5989,865.64145,645.531Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
@@ -182,7 +185,7 @@ export default function InSyncSVG() {
         <circle cx="146.4126" cy="281.26989" r="1.55299" fill="#fff" />
         <path
             d="M325.10758,536.6074h-80.5977a2.12093,2.12093,0,0,1-2.11847-2.11847V501.78587a2.12093,2.12093,0,0,1,2.11847-2.11847h80.5977a2.1209,2.1209,0,0,1,2.11847,2.11847v32.70306A2.1209,2.1209,0,0,1,325.10758,536.6074Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M317.4332,552.29525H252.18432a2.54217,2.54217,0,1,1,0-5.08433H317.4332C320.71161,547.16516,320.7444,552.34142,317.4332,552.29525Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
@@ -194,7 +197,7 @@ export default function InSyncSVG() {
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
         <path
             d="M325.10758,634.6074h-80.5977a2.12093,2.12093,0,0,1-2.11847-2.11847V599.78587a2.12093,2.12093,0,0,1,2.11847-2.11847h80.5977a2.1209,2.1209,0,0,1,2.11847,2.11847v32.70306A2.1209,2.1209,0,0,1,325.10758,634.6074Z"
-            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className="fill-primary-500" />
+            transform="translate(-118.66231 -178.18943)" fill="#63ff7e" className={clsx("fill-primary-500", className)} />
         <path
             d="M317.4332,650.29525H252.18432a2.54217,2.54217,0,1,1,0-5.08433H317.4332C320.71161,645.16516,320.7444,650.34142,317.4332,650.29525Z"
             transform="translate(-118.66231 -178.18943)" fill="#e4e4e4" />
