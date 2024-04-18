@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import { ReactElement } from "react";
 
 export interface tableEmpty {
-  componentSVG: () => ReactNode;
+  componentSVG: ReactElement;
   title: string;
   subtitle: string;
 }
