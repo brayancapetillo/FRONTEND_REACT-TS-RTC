@@ -3,6 +3,7 @@ import { IoRemoveOutline } from "react-icons/io5";
 
 import { cardMenu } from "../../../interfaces/cards/CardMenu";
 import React from "react";
+import clsx from "clsx";
 
 function CardMenu(props: cardMenu) {
   return (
@@ -16,26 +17,21 @@ function CardMenu(props: cardMenu) {
             {props.total}
           </div>
           <span
-            className={`text-normal ml-2 flex items-center font-semibold ${props.Profitable > 0 ? "text-emerald-500" : "text-red-500"}`}
+            className={clsx('text-normal ml-2 flex items-center font-semibold',
+              { 'text-success': props.Profitable > 0 },
+              { 'text-danger': props.Profitable <= 0 }
+            )}
           >
             {props.Profitable > 0 ? (
-              <LuPlus className="text-emerald-500" size={10} />
+              <LuPlus className="text-success" size={10} />
             ) : (
-              <IoRemoveOutline className="text-red-500" size={10} />
+              <IoRemoveOutline className="text-danger" size={10} />
             )}
             {props.Profitable > 0 ? props.Profitable : props.Profitable * -1}%
           </span>
         </div>
-        <div
-          style={{
-            background: `color-mix(in srgb,${props.color},transparent 85%)`,
-          }}
-          className={`mb-2 flex h-12 w-12 items-center justify-center rounded-full`}
-        >
-          {React.createElement(props.icon, {
-            size: 20,
-            style: { color: `${props.color}` },
-          })}
+        <div className={clsx('mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-opacity-15 text-xl', props.className)}>
+          {props.icon}
         </div>
       </div>
       <div className="text-gray-400 flex text-xs dark:text-white/80">

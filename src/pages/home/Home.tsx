@@ -11,8 +11,6 @@ import { Client } from "../../interfaces/global/clients/client.interface";
 import { ClientService } from "../../services/data/clients.example";
 
 
-
-
 function Home() {
 
   const [clients, setclients] = useState<Client[]>([]);
@@ -34,32 +32,32 @@ function Home() {
             sbtitle="Las rentas este mes fueron las esperadas"
             total={13}
             Profitable={42.5}
-            icon={LuBadgeCheck}
-            color="#10b981"
+            icon={<LuBadgeCheck/>}
+            className='bg-emerald-500 text-emerald-500'
           />
           <CardMenu
             title="Proximas rentas"
             sbtitle="El numero de rentas en los siguientes meses"
             total={8}
             Profitable={-10.2}
-            icon={LuCalendarClock}
-            color="#f43f5e"
+            icon={<LuCalendarClock/>}
+            className='bg-rose-500 text-rose-500'
           />
           <CardMenu
             title="Clientes"
             sbtitle="El numero de clientes crecio"
             total={57}
             Profitable={20.4}
-            icon={LuUsers2}
-            color="#6366f1"
+            icon={<LuUsers2/>}
+            className='bg-indigo-500 text-indigo-500'
           />
           <CardMenu
             title="Rentas totales"
             sbtitle="Este es el total de rentas de este anio"
             total={140}
             Profitable={8.8}
-            icon={LuLineChart}
-            color="#f59e0b"
+            icon={<LuLineChart/>}
+            className='bg-amber-500 text-amber-500'
           />
         </div>
 
