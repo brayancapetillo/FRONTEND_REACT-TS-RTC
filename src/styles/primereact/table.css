@@ -1,6 +1,6 @@
 /*-===================== TABLE =====================-*/
 .p-datatable {
-  @apply relative;
+  @apply relative w-full grid;
 }
 
 .p-datatable .p-datatable-header {
