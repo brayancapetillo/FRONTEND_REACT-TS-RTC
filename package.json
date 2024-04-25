@@ -21,6 +21,7 @@
     "primeicons": "^6.0.1",
     "primereact": "^10.5.3",
     "react": "^18.2.0",
+    "react-big-calendar": "^1.11.6",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
@@ -56,6 +57,7 @@
   "devDependencies": {
     "@types/echarts": "^4.9.22",
     "@types/hex-rgb": "^4.1.1",
+    "@types/react-big-calendar": "^1.8.9",
     "@types/react-router-dom": "^5.3.3",
     "postcss-nested": "^6.0.1",
     "postcss-nesting": "^12.1.0",
